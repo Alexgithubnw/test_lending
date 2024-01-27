@@ -1,0 +1,92 @@
+.modal-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.fa-xmark {
+  color: #fff;
+  font-size: 19px;
+  cursor: pointer;
+}
+.fa-xmark:hover {
+  color: #b4b4b4;
+}
+.modal-close {
+  text-align: right;
+  margin-bottom: 10px;
+}
+.modal {
+  width: 280px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.modal-filter {
+  background-color: #fff;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+}
+.sorting-type-modal {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-modal {
+  width: 244px;
+  margin-bottom: 19px;
+}
+.dropdown-content-modal {
+  width: 244px;
+}
+.sorting-price-modal {
+  display: flex;
+  flex-direction: column;
+}
+.sorting-price-from-to-modal {
+  width: 244px;
+  margin-bottom: 19px;
+  margin-right: 0;
+}
+.sorting-price-input-modal {
+  width: 200px;
+  background: transparent;
+  border: none;
+  text-align: right;
+}
+.modal-filter-btn {
+  padding: 14px 0;
+  background-color: #ff3d3d;
+  text-align: center;
+  color: #fff;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+.modal-filter-btn:hover {
+  background: #ce2929;
+}
+.modal-overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal--visible {
+  display: block;
+}
